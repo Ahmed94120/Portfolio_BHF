@@ -1,5 +1,5 @@
 import React from "react";
-import profile from "../assets/profile.jpeg";
+import profile from "../assets/Profile.jpeg";
 import { RxDoubleArrowRight } from "react-icons/rx";
 
 const Accueil = () => {
