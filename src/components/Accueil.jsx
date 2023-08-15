@@ -11,16 +11,17 @@ const Accueil = () => {
          <div className="max-w-screen-lg mx-auto flex flex-col items-center justify-center h-full px-4  md:flex-row">
             <div className="flex flex-col justify-center h-full mf:mt-100">
                <h2 className="text-3xl sm:text-6xl front-bold text-white">
-                  🚀 Bienvenu sur mon site de prestations! 🌐
+                  🚀 Bienvenue sur mon site de prestations ! 🌐
                </h2>
                <p className="text-gray-500 py-4 max-w-md">
                   {" "}
-                  Salut, je suis Ahmed, passionné par la technologie et la
-                  créativité. Je suis développeur web freelance et étudiant en
-                  ingénierie de la cybersécurité. Avec des compétences en React,
-                  Vue.js, Laravel et WordPress, je crée des sites web modernes
-                  et uniques qui répondent à vos besoins. Explorez mes services
-                  sur mon site et contactez-moi via la page de contact.
+                  Salut, je suis <b>Ahmed</b>, passionné par la technologie et
+                  la créativité. Je suis <b>développeur web freelance</b> et
+                  étudiant en ingénierie de la <b>cybersécurité</b>. Avec des
+                  compétences en React, Vue.js, Laravel et WordPress, je crée
+                  des <b>sites web modernes et uniques </b> qui répondent à vos
+                  besoins. Explorez mes services sur mon site et contactez-moi
+                  via la page de contact.
                </p>
 
                <div>
