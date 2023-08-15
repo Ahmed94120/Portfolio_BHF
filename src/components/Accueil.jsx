@@ -10,7 +10,7 @@ const Accueil = () => {
       >
          <div className="max-w-screen-lg mx-auto flex flex-col items-center justify-center h-full px-4  md:flex-row">
             <div className="flex flex-col justify-center h-full mf:mt-100">
-               <h2 className="text-3xl sm:text-6xl front-bold text-white">
+               <h2 className="text-4xl sm:text-7xl front-bold text-white">
                   🚀 Bienvenue sur mon site de prestations ! 🌐
                </h2>
                <p className="text-gray-500 py-4 max-w-md">
