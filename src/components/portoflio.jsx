@@ -1,11 +1,3 @@
-import arrayDestruct from "../assets/portfolio/arrayDestruct.jpg";
-import installNode from "../assets/portfolio/installNode.jpg";
-import navbar from "../assets/portfolio/navbar.jpg";
-
-import reactSmooth from "../assets/portfolio/reactSmooth.jpg";
-import reactParallax from "../assets/portfolio/reactParallax.jpg";
-import reactWeather from "../assets/portfolio/reactWeather.jpg";
-import usestate from "../assets/portfolio/usestate.jpg";
 import travaux from "../assets/portfolio/travaux.png";
 
 const portoflio = () => {
