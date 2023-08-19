@@ -4,7 +4,7 @@ const contact = () => {
          name="Contact"
          className="bg-gradient-to-b from-black to-gray-500 w-full h-screen"
       >
-         <div>
+         <div className="mx-auto">
             <div>
                <p>Contact</p>
                <p>Remplissez le formulaire suivant afin de prendre contact</p>

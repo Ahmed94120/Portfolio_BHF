@@ -1,12 +1,17 @@
 import css from "../assets/css.png";
 import html from "../assets/html.png";
 import githublogo from "../assets/githublogo.png";
-import graphql from "../assets/graphql.png";
+
 import javascript from "../assets/javascript.png";
 import nextjs from "../assets/nextjs.png";
 import node from "../assets/node.png";
 import react from "../assets/react.png";
 import tailwind from "../assets/tailwind.png";
+import Python from "../assets/Python.png";
+import Bash from "../assets/Bash.png";
+import Php from "../assets/Php.png";
+import Laravel from "../assets/Laravel.png";
+import Docker from "../assets/Docker.png";
 
 const Experience = () => {
    const experiences = [
@@ -42,9 +47,9 @@ const Experience = () => {
       },
       {
          id: 6,
-         src: graphql,
-         title: "Graphql",
-         style: "shadow-pink-500",
+         src: Python,
+         title: "Python",
+         style: "shadow-yellow-500",
       },
       {
          id: 7,
@@ -64,18 +69,42 @@ const Experience = () => {
          title: "Github",
          style: "shadow-gray-500",
       },
+      {
+         id: 10,
+         src: Php,
+         title: "Php",
+         style: "shadow-purple-500",
+      },
+      {
+         id: 11,
+         src: Laravel,
+         title: "Laravel",
+         style: "shadow-red-500",
+      },
+      {
+         id: 12,
+         src: Bash,
+         title: "Bash",
+         style: "shadow-white",
+      },
+      {
+         id: 13,
+         src: Docker,
+         title: "Docker",
+         style: "shadow-blue-500",
+      },
    ];
    return (
       <div
          name="Expériences"
          className="bg-gradient-to-b from-gray-800 to-black w-full h-screen"
       >
-         <div className="max-w-screen-lg mx-auto p-4 flex flex-col justify-center w-full h-full text-white">
+         <div className="max-w-screen-lg mx-auto p-4 flex flex-col justify-center w-full h-full  text-white">
             <div>
-               <p className="text-4xl front-bold border-b-4 border-gray-500 p-2 inline">
+               <p className="text-4xl front-bold border-b-4 border-gray-500 p-5 inline">
                   Expériences
                </p>
-               <p className="py-6">
+               <p className="py-10">
                   Voici les technologies avec lesquelles j&apos;ai travaillé
                </p>
             </div>

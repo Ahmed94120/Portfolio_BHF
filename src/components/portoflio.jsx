@@ -26,10 +26,6 @@ const portoflio = () => {
          id: 6,
          src: travaux,
       },
-      {
-         id: 7,
-         src: travaux,
-      },
    ];
    return (
       <div
