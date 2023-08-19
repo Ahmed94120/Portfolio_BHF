@@ -1,7 +1,6 @@
-import React from "react";
 import { FaLinkedin, FaInstagramSquare } from "react-icons/fa";
 import { HiOutlineMail } from "react-icons/hi";
-import { BsFillPersonFill } from "react-icons/bs";
+
 const SocialLinks = () => {
    const links = [
       {
