@@ -6,36 +6,37 @@ import reactSmooth from "../assets/portfolio/reactSmooth.jpg";
 import reactParallax from "../assets/portfolio/reactParallax.jpg";
 import reactWeather from "../assets/portfolio/reactWeather.jpg";
 import usestate from "../assets/portfolio/usestate.jpg";
+import travaux from "../assets/portfolio/travaux.png";
 
 const portoflio = () => {
-   const porffolios = [
+   const portfolios = [
       {
          id: 1,
-         src: arrayDestruct,
+         src: travaux,
       },
       {
          id: 2,
-         src: installNode,
+         src: travaux,
       },
       {
          id: 3,
-         src: reactSmooth,
+         src: travaux,
       },
       {
          id: 4,
-         src: reactParallax,
+         src: travaux,
       },
       {
          id: 5,
-         src: navbar,
+         src: travaux,
       },
       {
          id: 6,
-         src: reactWeather,
+         src: travaux,
       },
       {
          id: 7,
-         src: usestate,
+         src: travaux,
       },
    ];
    return (
@@ -53,7 +54,7 @@ const portoflio = () => {
                </p>
             </div>
             <div className="grid sm:grid-cols-2 md:grid-cols-3 gap-8 px-12 sm:px-0">
-               {porffolios.map(({ id, src }) => (
+               {portfolios.map(({ id, src }) => (
                   <div
                      key={id}
                      className="shadow-md shadow-gray-600 rounded-lg"
@@ -61,7 +62,7 @@ const portoflio = () => {
                      <img
                         src={src}
                         alt=""
-                        className="rounded-md duration-200 hover:scale-105"
+                        className="rounded-md duration-200 hover:scale-105 w-1/2 mx-auto"
                      />
                      <div className="flex items-center justify-center">
                         <button className="w-1/2 px-6 py-6 m-4 duration-200 hover:scale-105">
