@@ -4,7 +4,7 @@ const Accueil = () => {
    return (
       <div
          name="home"
-         className="h-screen w-full bg-gradient-to-b from-black via-black to-gray-800"
+         className=" h-screen w-full bg-gradient-to-b from-black via-black to-gray-800"
       >
          <div className="max-w-screen-lg mx-auto flex flex-col items-center justify-center h-full px-4 md:flex-row">
             <div className="flex flex-col justify-center h-full mf:mt-100">
@@ -16,8 +16,9 @@ const Accueil = () => {
                   Salut, je suis <b>Ahmed</b>, passionné par la technologie et
                   la créativité. Je suis <b>développeur web freelance</b> et
                   étudiant en ingénierie de la <b>cybersécurité</b>. Avec des
-                  compétences en React, Vue.js, Laravel et WordPress, je crée
-                  des <b>sites web modernes et uniques </b> qui répondent à vos
+                  compétences en React, Vue.js, Laravel et WordPress et
+                  d&apos;autres encore, je crée des{" "}
+                  <b>sites web modernes et uniques </b> qui répondent à vos
                   besoins. Explorez mes services sur mon site et contactez-moi
                   via la page de contact.
                </p>

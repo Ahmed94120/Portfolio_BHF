@@ -1,8 +1,19 @@
 import { FaLinkedin, FaInstagramSquare } from "react-icons/fa";
 import { HiOutlineMail } from "react-icons/hi";
+import malt from "../assets/malt.png";
 
 const SocialLinks = () => {
    const links = [
+      {
+         id: 0,
+         child: (
+            <>
+               Malt <img src={malt} alt="malt" className="w-7 h-7" />
+            </>
+         ),
+         href: "https://www.malt.fr/profile/ahmedbouhafa",
+         style: "rounded-tr-md items-center",
+      },
       {
          id: 1,
          child: (
@@ -11,7 +22,6 @@ const SocialLinks = () => {
             </>
          ),
          href: "https://www.linkedin.com/in/ahmed-bouhafa-6276671a7/",
-         style: "rounded-tr-md",
       },
       {
          id: 2,
@@ -21,7 +31,6 @@ const SocialLinks = () => {
             </>
          ),
          href: "https://www.instagram.com/bhf_services/",
-         style: "rounded-tr-md",
       },
       {
          id: 3,
@@ -31,6 +40,7 @@ const SocialLinks = () => {
             </>
          ),
          href: "mailto:ahmed.bhfpro@gmail.com",
+         style: "rounded-br-md",
       },
    ];
 

@@ -2,16 +2,16 @@ const about = () => {
    return (
       <div
          name="about"
-         className="w-full h-screen bg-gradient-to-b from-gray-800 to-black text-white"
+         className="w-full  bg-gradient-to-b from-gray-800 to-black text-white py-12"
       >
          <div className="max-w-screen-lg p-4 mx-auto flex flex-col justify-center w-full h-full">
-            <div className="pb-8">
+            <div className="">
                <p className="text-4xl font-bold inline border-b-4 border-gray-500">
                   {" "}
                   À propos
                </p>
             </div>
-            <p className="text-xl mt-20">
+            <p className="text-xl mt-20 ">
                Salut, je suis Ahmed, un développeur web passionné et un étudiant
                en ingénierie de la cybersécurité. Mon parcours associe
                habilement la technologie du développement à l&apos;importance

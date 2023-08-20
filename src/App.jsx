@@ -9,12 +9,14 @@ function App() {
    return (
       <div>
          <NavBar />
-         <Accueil />
-         <SocialLinks />
-         <About />
-         <Portoflio />
-         <Experience />
-         <Contact />
+         <div className="flex-col flex">
+            <Accueil />
+            <SocialLinks />
+            <About />
+            <Portoflio />
+            <Experience />
+            <Contact />
+         </div>
       </div>
    );
 }

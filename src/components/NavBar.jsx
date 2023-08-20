@@ -1,5 +1,7 @@
 import React from "react";
+import LogoBHF from "../assets/logo_BHF-transparent.png";
 import { FaBars, FaTimes } from "react-icons/fa";
+import { Link } from "react-scroll";
 
 const NavBar = () => {
    const [nav, setNav] = React.useState(false);
@@ -8,37 +10,44 @@ const NavBar = () => {
       {
          id: 1,
          link: "Accueil",
+         title: "Accueil",
       },
       {
          id: 2,
-         link: "À propos",
+         link: "about",
+         title: <>À&nbsp;propos</>,
       },
       {
          id: 3,
          link: "Portfolio",
+         title: "Portfolio",
       },
       {
          id: 4,
          link: "Expériences",
+         title: "Expériences",
       },
       {
          id: 5,
          link: "Contact",
+         title: "Contact",
       },
    ];
    return (
-      <div className="flex justify-between items-center w-full px-4 text-white bg-black fixed ">
+      <div className="flex justify-between items-center w-full px-4 text-white bg-black md:fixed">
          <div>
-            <h1 className="text-3xl ml-2 mt-2 font-logo">BHF</h1>
+            <img src={LogoBHF} alt="Logo BHF" className="h-20 p-2" />
          </div>
 
          <ul className="hidden md:flex">
-            {links.map(({ id, link }) => (
+            {links.map(({ id, title, link }) => (
                <li
                   key={id}
-                  className="px-4 cursor-pointer capitalize font-medium text-gray-500 hover:scale-105 duration-200"
+                  className="px-6 cursor-pointer capitalize font-medium text-gray-500 hover:scale-105 duration-200"
                >
-                  {link}
+                  <Link to={link} smooth duration={500}>
+                     {title}
+                  </Link>
                </li>
             ))}
          </ul>
@@ -50,12 +59,19 @@ const NavBar = () => {
          </div>
          {nav && (
             <ul className="flex flex-col justify-center items-center absolute top-0 left-0 w-full h-screen bg-gradient-to-b from-black to-gray-800 to-gray-500">
-               {links.map(({ id, link }) => (
+               {links.map(({ id, title, link }) => (
                   <li
                      key={id}
                      className="px-4 cursor-pointer capitalize py-6 text-4xl hover:scale-105 duration-200 text-gray-500 hover:text-white"
                   >
-                     {link}
+                     <Link
+                        onClick={() => setNav(!nav)}
+                        to={link}
+                        smooth
+                        duration={500}
+                     >
+                        {title}
+                     </Link>
                   </li>
                ))}
             </ul>
