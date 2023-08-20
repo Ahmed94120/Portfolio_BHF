@@ -36,7 +36,7 @@ const NavBar = () => {
    return (
       <div className="flex justify-between items-center w-full px-4 text-white bg-black md:fixed">
          <div>
-            <img src={LogoBHF} alt="Logo BHF" className="h-20 p-2" />
+            <img src={LogoBHF} alt="Logo BHF" className="h-16 p-1" />
          </div>
 
          <ul className="hidden md:flex">

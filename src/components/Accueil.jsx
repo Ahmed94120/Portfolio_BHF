@@ -1,4 +1,5 @@
 import { RxDoubleArrowRight } from "react-icons/rx";
+import { Link } from "react-scroll";
 
 const Accueil = () => {
    return (
@@ -24,12 +25,17 @@ const Accueil = () => {
                </p>
 
                <div>
-                  <button className=" group text-white w-fit px-7 py-3 my-2 flex items-center rounded-md bg-gradient-to-r from-cyan-500 to-blue-500 cursor-pointer">
+                  <Link
+                     to="Portfolio"
+                     smooth
+                     duration={500}
+                     className=" group text-white w-fit px-7 py-3 my-2 flex items-center rounded-md bg-gradient-to-r from-cyan-500 to-blue-500 cursor-pointer"
+                  >
                      Portfolio &nbsp;
                      <span className="group-hover:rotate-90 duration-300">
                         <RxDoubleArrowRight size={20} className="ml-1" />
                      </span>
-                  </button>
+                  </Link>
                </div>
             </div>
             <div></div>
