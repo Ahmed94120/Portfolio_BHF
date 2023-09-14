@@ -30,7 +30,7 @@ const SocialLinks = () => {
                Instagram <FaInstagramSquare size={30} />
             </>
          ),
-         href: "https://www.instagram.com/bhf_services/",
+         href: "https://www.instagram.com/bhf_consulting/",
       },
       {
          id: 3,
@@ -39,7 +39,7 @@ const SocialLinks = () => {
                Mail <HiOutlineMail size={30} />
             </>
          ),
-         href: "mailto:ahmed.bhfpro@gmail.com",
+         href: "mailto:contact@bhfconsulting.fr",
          style: "rounded-br-md",
       },
    ];

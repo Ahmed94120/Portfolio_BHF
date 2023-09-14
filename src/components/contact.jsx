@@ -1,15 +1,4 @@
-import { useForm } from "react-hook-form";
-
 const contact = () => {
-   const {
-      handleSubmit,
-      register,
-      formState: { errors },
-   } = useForm();
-   function onSubmit(data) {
-      console.log(data);
-   }
-
    return (
       <div
          name="Contact"
@@ -26,37 +15,34 @@ const contact = () => {
             </div>
             <div className="flex justify-center items-center">
                <form
-                  onSubmit={handleSubmit(onSubmit)}
                   action="https://getform.io/f/f8c66576-dc3b-4ee0-80ae-aa97639d4167"
                   method="POST"
                   className="flex flex-col gap-6 w-full md:w-1/2"
                >
                   <input
-                     {...register("NomPrenom", { required: true })}
                      type="text"
                      name="NomPrenom"
                      placeholder="Entrez votre nom et prénom"
+                     required="Nom et prénom requis"
                      className="p-2 bg-transparent border-2 rounded-md text-white focus: outline-none"
                   />
-                  {errors.NomPrenom && (
-                     <p className="text-orange-500">Requis</p>
-                  )}
+
                   <input
-                     {...register("Email", { required: true })}
                      type="text"
                      name="Email"
                      placeholder="Entrez votre adresse mail"
+                     required="Adresse mail requise"
                      className="p-2 bg-transparent border-2 rounded-md text-white focus: outline-none"
                   />
-                  {errors.Email && <p className="text-orange-500">Requis</p>}
+
                   <textarea
-                     {...register("Message", { required: true })}
                      name="Message"
+                     required="Message requis"
                      placeholder="Écrivez votre message ici"
                      rows={10}
                      className="p-2 bg-transparent border-2 rounded-md text-white focus: outline-none"
                   ></textarea>
-                  {errors.Message && <p className="text-orange-500">Requis</p>}
+
                   <button
                      type="submit"
                      className="text-white bg-gradient-to-b from-cyan-500 to-blue-500 px-6 py-3 my-6 mx-auto flex items-center rounded-md hover:scale-110 duration-300"
