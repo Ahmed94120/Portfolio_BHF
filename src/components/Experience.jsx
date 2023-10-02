@@ -12,6 +12,8 @@ import Bash from "../assets/Bash.png";
 import Php from "../assets/Php.png";
 import Laravel from "../assets/Laravel.png";
 import Docker from "../assets/Docker.png";
+import Wordpress from "../assets/Wordpress.png";
+import Shopify from "../assets/Shopify.png";
 
 const Experience = () => {
    const experiences = [
@@ -92,6 +94,18 @@ const Experience = () => {
          src: Docker,
          title: "Docker",
          style: "shadow-blue-500",
+      },
+      {
+         id: 14,
+         src: Wordpress,
+         title: "Wordpress",
+         style: "shadow-blue-500",
+      },
+      {
+         id: 14,
+         src: Shopify,
+         title: "Shopify",
+         style: "shadow-green-500",
       },
    ];
    return (
