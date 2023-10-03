@@ -1,18 +1,24 @@
 import travaux from "../assets/portfolio/travaux.png";
+import RestaurantWPBHF from "../assets/portfolio/RestaurantWPBHF.png";
+import rendredeserthabitable from "../assets/portfolio/rendredeserthabitable.png";
+import Dragonballwebsite from "../assets/portfolio/Dragonballwebsite.png";
 
 const portoflio = () => {
    const portfolios = [
       {
          id: 1,
-         src: travaux,
+         src: RestaurantWPBHF,
+         a: "https://ahmed94120.github.io/RestaurantWPBHF/",
       },
       {
          id: 2,
-         src: travaux,
+         src: rendredeserthabitable,
+         a: "https://rendreledeserthabitable.com",
       },
       {
          id: 3,
-         src: travaux,
+         src: Dragonballwebsite,
+         a: "https://mm01.thorelnicolas.fr/archives/a20/bouhafaa/projet/",
       },
       {
          id: 4,
@@ -42,7 +48,7 @@ const portoflio = () => {
                </p>
             </div>
             <div className="grid sm:grid-cols-2 md:grid-cols-3 gap-8 px-12 sm:px-0">
-               {portfolios.map(({ id, src }) => (
+               {portfolios.map(({ id, src, a }) => (
                   <div
                      key={id}
                      className="shadow-md shadow-gray-600 rounded-lg"
@@ -50,11 +56,11 @@ const portoflio = () => {
                      <img
                         src={src}
                         alt=""
-                        className="rounded-md duration-200 hover:scale-105 w-1/2 mx-auto"
+                        className="rounded-md duration-200 hover:scale-105 w-2/3 mx-auto"
                      />
                      <div className="flex items-center justify-center">
-                        <button className="w-1/2 px-6 py-6 m-4 duration-200 hover:scale-105">
-                           Visiter
+                        <button className="w-1/2 px-6 py-6 m-4 duration-300 hover:scale-105">
+                           <a href={a}>Visiter</a>
                         </button>
                      </div>
                   </div>
