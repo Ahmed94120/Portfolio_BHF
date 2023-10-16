@@ -130,7 +130,7 @@ const portoflio = () => {
                      Consultez quelques plans de drone que j&apos;ai pu faire
                   </p>
                </div>
-               <div className=" max-w-[900px] h-[675px] w-full m-auto py-16 px-4 relative group">
+               <div className=" max-w-[800px] h-[auto] w-full m-auto py-16 px-4 relative group">
                   <a
                      href={slides[currentIndex].href}
                      target="_blank"
