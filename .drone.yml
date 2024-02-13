@@ -1,0 +1,16 @@
+kind: pipeline
+name: build
+type: docker
+steps:
+  - name: docker
+    image: plugins/docker
+    settings:
+      username:
+        from_secret: registry-username
+      password:
+        from_secret: registry-password
+      registry: registry.undefined-dev.fr
+      repo: registry.undefined-dev.fr/external/ahmed-website
+      tags:
+        - latest
+      auto_tag: true
